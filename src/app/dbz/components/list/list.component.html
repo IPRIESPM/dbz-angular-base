@@ -11,6 +11,7 @@
       <span>{{character.name}}</span> -
       <span> <strong>Power:</strong> {{character.power}}</span>
     </div>
-    <button type="button" class="btn btn-danger" (click)="onDeleteCharacter(i)"><i class="bi bi-trash"></i></button>
+    <button type="button" class="btn btn-danger" (click)="onDeleteCharacter(character.id)"><i
+        class="bi bi-trash"></i></button>
   </li>
 </ul>
