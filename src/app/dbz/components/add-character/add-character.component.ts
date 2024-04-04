@@ -12,12 +12,13 @@ export class AddCharacterComponent {
 
   public character: Character = {
     name: '',
-    power: 0
+    power: 0,
+    id: ''
   }
 
   emitCharacter(): void {
     if (this.character.name.length === 0) return;
-    this.onNewCharacter.emit({ ...this.character });
-    this.character = { name: '', power: 0 };
+    this.onNewCharacter.emit({ ...this.character, id: "" });
+    this.character = { name: '', power: 0, id: '' };
   }
 }
